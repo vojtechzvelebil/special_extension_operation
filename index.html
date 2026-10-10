@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <style>
+    .fade_in_animation{
+      opacity: 0;
+      animation: fade_in_anim 0.1s ease-in-out forwards; /*6s */
+    }
+    @keyframes fade_in_anim{
+      0%{opacity: 0}
+      100%{opacity: 1}
+    }
+
+    .tutorial_control_btn{
+      cursor: pointer; color: black; padding: 10px 0px; text-align: center; position: absolute; top: 0; margin-top: -60px; width: 5.5vw; font-weight: 600;
+    }
+    #tutorial_previus_btn{ left: 12vw; background: dodgerblue; color: gold;}
+    #tutorial_next_btn{ left: 17.5vw; background: gold; color: dodgerblue;}
+
+
+    #tutorial_outter_div{
+      width: 33vw;
+      text-align: center;
+    }
+    #inner_tutorial{
+      font-size: 19px;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<div id="bkg_img" style="display: flex; background-size: cover; background-position: center; width: 100vw; height: 100vh; overflow: hidden; background-image: url('statue_of_lib2.png'); background-size: cover; ">
+
+  <div id="centered_panel" style="padding: 40px 30px; margin: auto; display: flex;  align-items: center; background: transparent; justify-content: center; width: 33vw; height: auto;">
+    <div id="tutorial_outter_div" style=" display: none; position: relative; padding: 30px; color: lightgrey; font-size: 18px; background-color: rgba(5, 5,5, 0.6); margin-top: -50px">
+
+      <div style="font-weight: 600; position: absolute; top: 0; left: 0; margin: 0px; color: black; width: 45px; text-align: start; padding: 6px 3px; height: 16px; font-size: 12px"><span id="current_page" style="text-align: center; padding: 3px 5px; background: dodgerblue; color: gold;">1</span><span style="color: dodgerblue; background-color: gold; text-align: center; padding: 3px 5px;">10</span></div>
+      <div id="tutorial_previus_btn" class="tutorial_control_btn">Previous</div>
+      <div id="tutorial_next_btn" class="tutorial_control_btn" >Next</div>
+      <div id="inner_tutorial"></div>
+
+    </div>
+
+
+    <p id="intro_text" class="fade_in_animation" style="font-size: 18px;">
+      <kbd style="background:rgba(0, 87, 183, 0.8); color: rgb(245,245,245); line-height: 26px;">
+        There are over a hundred billion US dollars worth of Russian military
+        assets wreaking havoc on Ukraine while sitting within range of Ukrainian
+        FPV drones capable of destroying every single one of them. The tricky
+        part is spotting them before they reposition and disappear.
+        <br><br>
+        As a result of a lack of marketable, job-related skills or military
+        prowess, and after being inundated with depressing news about a vicious
+        full-scale war grinding on with no end in sight, on a
+        continent where the entire previous generation vowed never to do this
+        shit again...
+        <br><br>
+        We (royal plural) are announcing a <strong>Special Extension Operation.</strong>
+        <br><br>
+      </kbd>
+      <kbd style="background: rgba(255, 215, 0, 0.8); color: rgb(22, 22, 22); line-height: 26px;">
+        Based on OSINT databases, we have hidden the Russian arsenal currently deployed
+        in Ukraine around the internet. Once you find the hidden target, it takes just
+        one click to turn it into a collectable scrap token and have its
+        production value added to your score.
+        <br><br>
+        Collect all types of Russian death-dealing machinery; get to $1
+        billion, recover Ukraine's lost territories, end the war, win a Nobel Peace
+        Prize, receive a hereditary knighthood with 110,000-acre duchy by the Sea
+        of Azov and have a Statue of Liberty made out of the
+        scrap erected in the middle of Kyiv, dedicated to you.
+      </kbd>
+      <br><br>
+    </p>
+
+    <br>
+    <!-- <div style="flex: 0 0 100%;  margin-top: 20px;">
+      <div style="width: 80px; text-align: center; margin: auto; background: black; padding: 15px; color: white;">TUTORIAL</div>
+    </div> -->
+
+    <div id="tutorial" class="fade_in_animation" style="margin-left: 30px !important; cursor:pointer; display: flex; align-items: center; justify-content: center; width: 70px !important; min-width: 70px !important; max-width: 70px !important; flex: 0 0 70px !important; border: 1px solid white; height: 70px; color: white; position: relative; box-sizing: border-box; margin-top: -20px; font-size: 30px;">
+      <div style="position: absolute; top: 0; right: 0; margin-top: -30px; margin-left: -4px; font-weight: 200; font-size: 15px;">TUTORIAL</div>
+      📖
+    </div>
+
+  </div>
+</div>
+
+
+<script src="welcome.js"></script>
+</body>
+</html>
