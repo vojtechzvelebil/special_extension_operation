@@ -24,11 +24,11 @@ const tutorial_steps_list= [
 
   '<div style="position: fixed; top:0; left: 0; margin: 7vh 37vw;"> <img src="chapter_alert.png" style="width: 26vw; height: auto;"></div>',
 
-  '<div style="position: fixed; top:0; right: 0;"> <img src="popup_targets.png" style="width: 20vw; height: auto;"></div>',
+  '<div style="position: fixed; top:0; right: 0; margin-top: 40px !important;"> <img src="popup_targets.png" style="width: 20vw; height: auto;"></div>',
 
-  '<div style="position: fixed; top:0; right: 0;"> <img src="popup_chapters.png" style="width: 20vw; height: auto;"></div>',
+  '<div style="position: fixed; top:0; right: 0; margin-top: 40px !important"> <img src="popup_chapters.png" style="width: 20vw; height: auto;"></div>',
 
-  '<div style="position: fixed; top:0; right: 0;"> <img src="popup_recon.png" style="width: 20vw; height: auto;"></div>',
+  '<div style="position: fixed; top:0; right: 0; margin-top: 40px !important"> <img src="popup_recon.png" style="width: 20vw; height: auto;"></div>',
 
 
 ]
